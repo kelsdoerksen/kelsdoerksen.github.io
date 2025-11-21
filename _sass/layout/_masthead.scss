@@ -1,3 +1,7 @@
+/* ==========================================================================
+   MASTHEAD
+   ========================================================================== */
+
 .masthead {
   position: fixed;
   background: linear-gradient(90deg, #a64ac9, #ff69b4);
@@ -30,14 +34,4 @@
       text-decoration: none;
     }
   }
-}
-
-// 🔭 Background for space animation
-#space-background {
-  position: fixed;
-  width: 100%;
-  height: $masthead-height;
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
