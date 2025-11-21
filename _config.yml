@@ -26,7 +26,7 @@ author:
   name             : "Kelsey Doerksen"
   pronouns         : # example: "she/her"  
   bio              : "Postdoctoral Researcher"
-  location         : ""
+  location         : "Planet Earth"
   employer         : "ASU/University of Cape Town"
   uri              : # URL
   email            : "kelseydoerksen@gmail.com"
@@ -43,7 +43,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "https://github.com/kelsdoerksen"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
