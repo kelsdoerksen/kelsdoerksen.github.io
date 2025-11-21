@@ -1,34 +1,36 @@
 ---
-layout: single
-title: "Curriculum Vitae"
-permalink: /cv/
+layout: archive
+title: "Publications"
+permalink: /publications/
 author_profile: true
 ---
 
-<h2>Publications</h2>
-<ul>
-  <li>S. Hickman, M. Kelp, P. Griffiths, K. Doerksen, et al. “Applications of Machine Learning and Artificial Intelligence in Tropospheric Ozone Research”. TOAR-II Community Special Issue. 2025. <strong>Highlight paper</strong>.</li>
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+{% endif %}
 
-  <li>Pre-print: Doerksen, Fibaek, Schneider, Kim, Tingzon. <a href="https://arxiv.org/abs/2412.12188" target="_blank">“Predicting Internet Connectivity in Schools”</a>.</li>
+{% include base_path %}
 
-  <li>Doerksen, Li. “AI-Driven Sub-seasonal Landslide Forecasting in Nepal for Disaster Preparedness”. ICLR CCAI Workshop 2025.</li>
-
-  <li>Doerksen et al. “Uncertainty Quantification for Surface Ozone Emulators using Deep Learning”. NeurIPS ML and the Physical Sciences Workshop 2024.</li>
-
-  <li>Doerksen*, Tingzon*, Kim. “AI-powered school mapping and connectivity status prediction using Earth Observation.” ICLR 2024 ML for Remote Sensing Workshop.</li>
-
-  <li>Doerksen et al. “Leveraging Deep Learning for Physical Model Bias of Global Air Quality Estimates”. NeurIPS ML and Physical Sciences Workshop 2023.</li>
-
-  <li>Doerksen et al. “Precipitation-Triggered Landslide Prediction in Nepal using Machine Learning and Deep Learning”. IEEE IGARSS 2023.</li>
-
-  <li>Briand, Doerksen, Deleflie. “Solar EUV-Enhancement and Thermospheric Disturbances”. <a href="https://doi.org/10.1029/2021SW002840" target="_blank">Space Weather Journal</a>, Vol. 9, Issue 12.</li>
-
-  <li>Bernal, Doerksen, Yap. “Machine Learning for Early Satellite Anomaly Detection”. SmallSat 2021.</li>
-
-  <li>Ahumada, Doerksen, Zeller. “Automated fleet commissioning workflows at Planet”. SmallSat 2021. (Shared first authorship)</li>
-
-  <li>Doerksen*, Fischer*. “Autonomous Systems Validation (SysVal) environment for advancing Mission Operations”. SmallSat 2021.</li>
-</ul>
+<!-- New style rendering if publication categories are defined -->
+{% if site.publication_category %}
+  {% for category in site.publication_category  %}
+    {% assign title_shown = false %}
+    {% for post in site.publications reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.publications reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}
 
 
 
