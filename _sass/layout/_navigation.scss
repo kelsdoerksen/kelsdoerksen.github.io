@@ -175,7 +175,7 @@
 .greedy-nav {
   position: relative;
   min-width: 250px;
-  background: linear-gradient(90deg, #a64ac9, #ff69b4) !important;
+  background: var(--global-bg-color);
 
   a {
     display: block;
@@ -432,4 +432,25 @@
       display: block;
     }
   }
+}
+
+/* ==========================================================================
+   CUSTOM KELSEY GRADIENT NAVBAR
+   ========================================================================== */
+
+.masthead {
+  background: linear-gradient(90deg, #a64ac9, #ff69b4) !important;
+  border-bottom: none;
+}
+
+.greedy-nav {
+  background: transparent !important;
+}
+
+.greedy-nav a {
+  color: #fff !important;
+}
+
+.greedy-nav a:hover {
+  color: #f0f0f0 !important;
 }
