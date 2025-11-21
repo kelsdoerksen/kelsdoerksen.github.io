@@ -13,6 +13,9 @@ layout: compress
 
   <body>
 
+    <!-- 🌌 Particles.js Background Container -->
+    <div id="space-background"></div>
+
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
@@ -26,6 +29,14 @@ layout: compress
     </div>
 
     {% include scripts.html %}
+
+    <!-- 🌠 Load Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS.load('space-background', '/particles-config.json', function() {
+        console.log('Particles.js config loaded!');
+      });
+    </script>
 
   </body>
 </html>
