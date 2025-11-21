@@ -14,7 +14,7 @@ redirect_from:
     Arizona State University under 
     <a href="https://hannah-rae.github.io/" target="_blank">Hannah Kerner</a> and the 
     University of Cape Town at the Climate Risk Lab with 
-    <a href="https://acdi.uct.ac.za/contacts/christopher-trisos" target="_blank">Chris Trisos</a>. I’m also a <strong>2025–26 Museum of Science Science Communication Fellow</strong>!
+    <a href="https://acdi.uct.ac.za/contacts/christopher-trisos" target="_blank">Chris Trisos</a>. I’m also a <strong>2025–26 Museum of Science, Science Communication Fellow</strong>!
     I completed my PhD at the <a href="https://www.ox.ac.uk/" target="_blank">University of Oxford</a> as part of 
     <a href="https://oatml.cs.ox.ac.uk/" target="_blank">OATML</a>, supervised by Professor Yarin Gal in the Autonomous Intelligent Machines and Systems Doctoral Training Program.
   </p>
