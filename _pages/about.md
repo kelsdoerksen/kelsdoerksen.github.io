@@ -28,6 +28,6 @@ redirect_from:
   </p>
 
   <p>
-    Prior to my PhD, I was a Space Systems Engineer in Satellitt Operations at Planet, operating the world's largest EO constellation! I completed my Masters in Electrical and Computer Engineering and the University of Western Ontario and my Bachelors in Aerospace Engineering: Space Systems Design at Carleton University.
+    Prior to my PhD, I was a Space Systems Engineer in Satellite Operations at Planet, operating the world's largest EO constellation! I completed my Masters in Electrical and Computer Engineering and the University of Western Ontario and my Bachelors in Aerospace Engineering: Space Systems Design at Carleton University.
   </p>
 </section>
