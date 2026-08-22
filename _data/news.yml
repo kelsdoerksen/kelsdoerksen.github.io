@@ -1,0 +1,18 @@
+# Homepage news items.
+# Newest first — they render on the homepage in the order listed here.
+# `date` is displayed verbatim, so write it however you like ("September 2026", "Sept 2026", etc.).
+# `text` may contain HTML (e.g. links).
+
+- date: "September 2026"
+  text: >-
+    I'll be at <strong>NYC Climate Week</strong> — reach out if you'd like to meet up!
+
+- date: "August 2026"
+  text: >-
+    Our paper was accepted to the <strong>CV4Ecology workshop at ECCV 2026</strong>.
+
+- date: "May 2026"
+  text: >-
+    New pre-print:
+    <a href="https://arxiv.org/abs/2605.29330" target="_blank">EarthShift: a benchmark for measuring
+    robustness to real-world distribution shifts in Earth observation</a>.

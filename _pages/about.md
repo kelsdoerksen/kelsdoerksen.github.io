@@ -30,4 +30,60 @@ redirect_from:
   <p>
     Prior to my PhD, I was a Space Systems Engineer in Satellite Operations at Planet, operating the world's largest EO constellation! I completed my Masters in Electrical and Computer Engineering and the University of Western Ontario and my Bachelors in Aerospace Engineering: Space Systems Design at Carleton University.
   </p>
+
+  <h2 style="font-size: 1.6rem; font-weight: 700; margin-top: 2.5rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--global-border-color);">News 📣</h2>
+
+  <ul class="news-list">
+    {% for item in site.data.news %}
+      <li class="news-item">
+        <span class="news-date">{{ item.date }}</span>
+        <span class="news-text">{{ item.text }}</span>
+      </li>
+    {% endfor %}
+  </ul>
 </section>
+
+<style>
+  .news-list {
+    list-style: none;
+    margin: 1.2rem 0 0;
+    padding: 0;
+  }
+
+  .news-item {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--global-border-color);
+  }
+
+  .news-item:last-child {
+    border-bottom: none;
+  }
+
+  .news-date {
+    flex: 0 0 9.5rem;
+    font-size: 0.85em;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--global-text-color);
+    opacity: 0.8;
+  }
+
+  .news-text {
+    flex: 1 1 auto;
+  }
+
+  @media (max-width: 600px) {
+    .news-item {
+      display: block;
+    }
+
+    .news-date {
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+  }
+</style>
