@@ -1,0 +1,36 @@
+# Homepage "Code & projects" section.
+# Groups render in the order listed here, and so do the items within each group.
+# `repo` is "owner/name" on GitHub — star and fork counts are fetched live from the GitHub API.
+# `links` is optional; each link needs a `label` and a `url`.
+# `desc` may contain HTML (e.g. links).
+
+- group: "Tools & datasets"
+  items:
+    - name: "airPy"
+      repo: "kelsdoerksen/airPy"
+      desc: >-
+        Generate AI-ready datasets for air quality and Earth observation studies using Google Earth Engine.
+    - name: "earthshift"
+      repo: "kerner-lab/earthshift"
+      desc: >-
+        Benchmarking the robustness of geospatial foundation models to realistic distribution shifts in Earth observation.
+
+- group: "Research code"
+  items:
+    - name: "giga-connectivity"
+      repo: "kelsdoerksen/giga-connectivity"
+      desc: >-
+        Predicting school connectivity around the world from EO data. ESA Φ-lab × UNICEF Giga research fellowship.
+    - name: "giga-mobility"
+      repo: "kelsdoerksen/giga-mobility"
+      desc: >-
+        Mobility data analysis to support AI mapping of schools for the UNICEF-ITU Giga project.
+    - name: "sudsaq"
+      repo: "kelsdoerksen/sudsaq-kelsey-research"
+      desc: >-
+        Deep learning with uncertainty quantification for physical-model bias of surface ozone.
+    - name: "landslide-forecast-nepal"
+      repo: "kelsdoerksen/landslide-forecast-nepal"
+      desc: >-
+        Forecasting landslide probability in Nepal with machine learning and EO data.
+
