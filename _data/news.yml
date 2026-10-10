@@ -3,6 +3,10 @@
 # `date` is displayed verbatim, so write it however you like ("September 2026", "Sept 2026", etc.).
 # `text` may contain HTML (e.g. links).
 
+- date: "October 2026"
+  text: >-
+    Our work is accepted to AGU! I will be presenting two orals on <strong>AI-powered crop impacts</strong> and <strong>EarthShift</strong>
+
 - date: "September 2026"
   text: >-
     I'll be at <strong>NYC Climate Week</strong> — reach out if you'd like to meet up!
