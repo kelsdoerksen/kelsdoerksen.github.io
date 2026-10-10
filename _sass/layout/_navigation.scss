@@ -259,7 +259,7 @@
     padding: 5px;
     border: 1px solid var(--global-border-color);
     border-radius: $border-radius;
-    background: #fff;
+    background: var(--global-bg-color);
     box-shadow: 0 0 10px rgba(#000, 0.25);
 
     a {
@@ -376,7 +376,7 @@
   color: var(--global-text-color-light);
   text-transform: uppercase;
   letter-spacing: 1px;
-  background-color: #fff;
+  background-color: var(--global-bg-color);
   border: 1px solid var(--global-border-color);
   border-radius: $border-radius;
   box-shadow: $box-shadow;
@@ -439,7 +439,7 @@
    ========================================================================== */
 
 .masthead {
-  background: linear-gradient(90deg, #a64ac9, #ff69b4) !important;
+  background: linear-gradient(90deg, $accent-blue, $accent-pink) !important;
   border-bottom: none;
 }
 

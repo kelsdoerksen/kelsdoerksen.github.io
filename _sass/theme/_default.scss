@@ -26,17 +26,24 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
+/* Brand colours (screen approximations of the Pantone swatches) */
+$oat                        : #F1EEDB;  // PANTONE P 3-9 C
+$accent-blue                : #20639F;  // PANTONE P 104-8 C
+$accent-pink                : #F54E96;  // PANTONE P 73-7 C
+
 /* Default light theme for the site */
 :root {
+    --accent-blue                       : #{$accent-blue};
+    --accent-pink                       : #{$accent-pink};
     --global-base-color                 : #{$gray};
-    --global-bg-color                   : #fff;
-    --global-border-color               : #{$lighter-gray};
-    --global-code-background-color      : #fafafa;
+    --global-bg-color                   : #{$oat};
+    --global-border-color               : #{mix(#000, $oat, 12%)};
+    --global-code-background-color      : #{mix(#fff, $oat, 50%)};
     --global-code-text-color            : #{$darker-gray};
     --global-fig-caption-color          : mix(#fff,  #{$dark-gray}, 25%);
-    --global-link-color                 : #2f7f93;
-    --global-link-color-hover           : mix(#000, #2f7f93, 25%);
-    --global-link-color-visited         : mix(#fff, #2f7f93, 25%);  
+    --global-link-color                 : #{$accent-blue};
+    --global-link-color-hover           : #{mix(#000, $accent-blue, 25%)};
+    --global-link-color-visited         : #{mix(#fff, $accent-blue, 15%)};  
     --global-masthead-link-color        : #{$dark-gray};
     --global-masthead-link-color-hover  : mix(#000, #{$gray}, 25%);    
     --global-text-color                 : #{$dark-gray};
