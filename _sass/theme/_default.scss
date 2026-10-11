@@ -27,26 +27,25 @@ $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
 /* Brand colours (screen approximations of the Pantone swatches) */
-$oat                        : #F1EEDB;  // PANTONE P 3-9 C
-$accent-blue                : #20639F;  // PANTONE P 104-8 C
-$accent-pink                : #F54E96;  // PANTONE P 73-7 C
+$brand-bg                   : #F1ECCA;  // PANTONE 11-0609 TCX Ethereal Green
+$brand-text                 : #203C7F;  // PANTONE 19-3952 TCX Surf the Web
+$brand-accent               : #0072B5;  // PANTONE 18-4140 TCX French Blue
 
 /* Default light theme for the site */
 :root {
-    --accent-blue                       : #{$accent-blue};
-    --accent-pink                       : #{$accent-pink};
+    --accent-color                      : #{$brand-accent};
     --global-base-color                 : #{$gray};
-    --global-bg-color                   : #{$oat};
-    --global-border-color               : #{mix(#000, $oat, 12%)};
-    --global-code-background-color      : #{mix(#fff, $oat, 50%)};
-    --global-code-text-color            : #{$darker-gray};
-    --global-fig-caption-color          : mix(#fff,  #{$dark-gray}, 25%);
-    --global-link-color                 : #{$accent-blue};
-    --global-link-color-hover           : #{mix(#000, $accent-blue, 25%)};
-    --global-link-color-visited         : #{mix(#fff, $accent-blue, 15%)};  
-    --global-masthead-link-color        : #{$dark-gray};
-    --global-masthead-link-color-hover  : mix(#000, #{$gray}, 25%);    
-    --global-text-color                 : #{$dark-gray};
-    --global-text-color-light           : #{$light-gray};
-    --global-thead-color                : #{$lighter-gray};
+    --global-bg-color                   : #{$brand-bg};
+    --global-border-color               : #{mix($brand-text, $brand-bg, 15%)};
+    --global-code-background-color      : #{mix(#fff, $brand-bg, 50%)};
+    --global-code-text-color            : #{$brand-text};
+    --global-fig-caption-color          : #{mix($brand-bg, $brand-text, 25%)};
+    --global-link-color                 : #{$brand-accent};
+    --global-link-color-hover           : #{mix(#000, $brand-accent, 25%)};
+    --global-link-color-visited         : #{mix(#fff, $brand-accent, 15%)};  
+    --global-masthead-link-color        : #{$brand-text};
+    --global-masthead-link-color-hover  : #{mix(#000, $brand-text, 25%)};    
+    --global-text-color                 : #{$brand-text};
+    --global-text-color-light           : #{mix($brand-bg, $brand-text, 35%)};
+    --global-thead-color                : #{mix($brand-text, $brand-bg, 8%)};
 }

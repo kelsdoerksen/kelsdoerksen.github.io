@@ -31,7 +31,7 @@ redirect_from:
     Prior to my PhD, I was a Space Systems Engineer in Satellite Operations at Planet, operating the world's largest EO constellation! I completed my Masters in Electrical and Computer Engineering and the University of Western Ontario and my Bachelors in Aerospace Engineering: Space Systems Design at Carleton University.
   </p>
 
-  <h2 id="code" class="section-heading section-heading--blue">Code &amp; Projects 💻</h2>
+  <h2 id="code" class="section-heading">Code &amp; Projects 💻</h2>
 
   <p class="projects-intro">
     Open-source tools, datasets, and research code. More on <a href="{{ site.author.github }}" target="_blank">GitHub</a>.
@@ -58,7 +58,7 @@ redirect_from:
     </div>
   {% endfor %}
 
-  <h2 class="section-heading section-heading--pink">News 📣</h2>
+  <h2 class="section-heading">News 📣</h2>
 
   <ul class="news-list">
     {% for item in site.data.news %}
@@ -76,11 +76,7 @@ redirect_from:
     font-weight: 700;
     margin-top: 2.5rem;
     padding-bottom: 0.4rem;
-    border-bottom: 4px solid var(--accent-blue);
-  }
-
-  .page__content .section-heading--pink {
-    border-bottom-color: var(--accent-pink);
+    border-bottom: 4px solid var(--accent-color);
   }
 
   .news-list {
